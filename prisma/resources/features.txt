@@ -1,0 +1,23 @@
+Bakery;3000;Baker
+Smithy;2000;Blacksmith,Assistant
+Tavern;100;Bartender
+Mill;150;Miller
+General Store;250;Shopkeeper,Clerk
+Carpenter's Workshop;350;Carpenter,Apprentice
+Guardhouse;400;Guard Captain,Guard
+Inn;450;Innkeeper,Cook,Servant
+Church/Temple;500;Priest,Acolyte
+Butcher;600;Butcher
+Stable;700;Stable Master,Stablehand
+Tannery;800;Tanner,Apprentice
+Herbalist;900;Herbalist,Forager
+Lumber Mill;1000;Lumberjack,Sawyer
+Weaver's House;1200;Weaver,Spinner
+Potter's Kiln;1400;Potter
+Fletcher's Shop;1600;Fletcher,Bowyer
+Tailor;1800;Tailor,Seamstress
+Cobbler;2200;Cobbler
+Mine;2500;Foreman,Miner
+Apothecary;2800;Apothecary,Assistant
+Town Hall;3500;Mayor,Clerk,Tax Collector
+Scribe's Office;4000;Scribe,Bookbinder
