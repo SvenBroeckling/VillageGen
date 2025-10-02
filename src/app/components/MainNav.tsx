@@ -4,11 +4,7 @@ export function MainNav() {
 
     return (
         <Group justify="end" align="center" h="100%" p="md">
-            <Button variant="light">Register</Button>
-            <Button
-                component="a"
-                href="/login"
-            >Login</Button>
+            <Button>Create</Button>
         </Group>
     )
 }

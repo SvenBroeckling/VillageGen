@@ -18,6 +18,7 @@ model Village {
   id         Int    @id @default(autoincrement())
   name       String
   population Int
+  description String?
 
   villageFeatures VillageFeature[]
 
