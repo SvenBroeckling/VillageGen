@@ -34,12 +34,11 @@ docker-compose up
 
 ### Installation
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Create a `.env` file in the root of the project with the following content: `DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<database>`
-4. Apply migrations: `npx prisma migrate dev`
-5. Seed the database: `npx prisma db seed`
-6. Start the server: `npm run dev`
+1. Install dependencies: `npm install`
+2. Create a `.env` file in the root of the project with the following content: `DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<database>`
+3. Apply migrations: `npx prisma migrate dev`
+4. Seed the database: `npx prisma db seed`
+5. Start the server: `npm run dev`
 
 The server should now be running at http://localhost:3000.
 

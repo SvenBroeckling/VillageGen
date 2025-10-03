@@ -1,10 +1,11 @@
 import '@mantine/core/styles.css';
 
 import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Gen App',
-  description: 'Generate something',
+export const metadata: Metadata = {
+  title: 'VillageGen',
+  description: 'Generate random villages',
 };
 
 export default function RootLayout({
