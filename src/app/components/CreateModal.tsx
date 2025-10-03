@@ -16,7 +16,7 @@ export default function CreateModal() {
         mode: "uncontrolled",
         initialValues: {
             name: "",
-            population: 1000,
+            population: 4000,
             description: "",
         },
         validate: {
@@ -66,7 +66,7 @@ export default function CreateModal() {
                     </Button>
                 </form>
             </Modal>
-            <Button onClick={open}>Create one</Button>
+            <Button onClick={open}>Create Village</Button>
         </>
     )
 }
