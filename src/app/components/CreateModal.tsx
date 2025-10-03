@@ -15,9 +15,9 @@ export default function CreateModal() {
     const form = useForm<FormValues>({
         mode: "uncontrolled",
         initialValues: {
-            name: "",
+            name: "Deepwater Cove",
             population: 4000,
-            description: "",
+            description: "A small town next to a big river.",
         },
         validate: {
             name: (value) => value.length > 0 ? null : "Name is required",
