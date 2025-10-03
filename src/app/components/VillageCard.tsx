@@ -5,6 +5,7 @@ import React from "react";
 
 type VillageWithDetails = Village & {
     villageFeatures: ({
+        id: number;
         feature: { name: string };
         villageFeaturePositions: ({
             position: { name: string };
