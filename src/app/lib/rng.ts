@@ -1,6 +1,6 @@
 "use server";
 import prisma from "@/app/lib/prisma";
-import { Feature, Position, Prisma, Village, VillageFeaturePosition } from "@prisma/client";
+import { Feature, Position, Prisma, Village } from "@prisma/client";
 
 const populationFeatureMap: Record<number, number> = {
   400: 1,
@@ -24,7 +24,7 @@ export async function createRandomVillage(name: string, population: number, desc
   const features = await getRandomFeatures(numberOfFeaturesByPopulation(population), population);
   if (features) {
     for (const feature of features) {
-      const result = await prisma.villageFeature.create({
+      await prisma.villageFeature.create({
         data: {
           villageId: village.id,
           featureId: feature.id,
