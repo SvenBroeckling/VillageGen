@@ -1,6 +1,6 @@
 "use server";
-import prisma from "@/app/lib/prisma";
 import { revalidatePath } from "next/cache";
+import { createRandomVillage } from "./rng";
 
 type CreateVillageInput = {
   name: string;
@@ -10,9 +10,7 @@ type CreateVillageInput = {
 
 export async function createVillage(values: CreateVillageInput) {
   try {
-    const village = await prisma.village.create({
-      data: values,
-    });
+    await createRandomVillage(values.name, values.population, values.description);
     revalidatePath("/");
   } catch (error) {
     console.error(error);
