@@ -1,6 +1,7 @@
-import { Card, Flex, Grid, Space, Text } from "@mantine/core";
+import {Grid} from "@mantine/core";
 import prisma from "../lib/prisma";
 import VillageCard from "./VillageCard";
+import WelcomePanel from "@/app/components/WelcomePanel";
 
 export default async function CardRow() {
     const villages = await prisma.village.findMany({
@@ -21,13 +22,7 @@ export default async function CardRow() {
     return (
         <Grid>
             {villages.length === 0 ? (
-                <Flex justify="center" align="center" h="50vh" w="100%">
-                    <Card withBorder shadow="sm" radius="md" padding="lg">
-                        <Text>No villages found</Text>
-                        <Space h="md"></Space>
-                        <Text c="dimmed">Create one</Text>
-                    </Card>
-                </Flex>
+                <WelcomePanel />
             ) : (
                 villages.map((village) => (
                     <VillageCard village={village} key={village.id} />

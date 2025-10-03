@@ -1,6 +1,6 @@
 "use client";
-import { Button, Card, Grid, Space, Text } from "@mantine/core";
-import { Village } from "@prisma/client";
+import {Card, Grid, Space, Text} from "@mantine/core";
+import {Village} from "@prisma/client";
 import React from "react";
 
 type VillageWithDetails = Village & {
@@ -17,7 +17,7 @@ type VillageWithDetails = Village & {
 
 export default function VillageCard({ village }: { village: VillageWithDetails }) {
     return (
-        <Grid.Col key={village.id} span={{ base: 12, md: 6, lg: 4 }}>
+        <Grid.Col key={village.id} span={{ base: 12, md: 6, lg: 3 }}>
             <Card shadow="sm" radius="md" padding="lg" withBorder>
                 <Text fw={500}>{village.name}</Text>
                 <Text size="sm" c="dimmed">
@@ -42,8 +42,6 @@ export default function VillageCard({ village }: { village: VillageWithDetails }
                         </React.Fragment>
                     ))}
                 </div>
-
-                <Button color="blue" fullWidth>Show</Button>
             </Card>
         </Grid.Col>
     )
